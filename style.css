@@ -1,0 +1,437 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border;
+}
+body {
+	font-family: 'Baloo 2', cursive;
+	background-color: #57596F;
+	position: relative;
+}
+
+.banner-text {
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+}
+.banner-text ul {
+	height: 50px;
+	float: right;
+}
+.banner-text ul li {
+	display: inline-block;
+	padding: 40px 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 15px;
+}
+.banner-text ul li:hover {
+	cursor: pointer;
+}
+.banner-text h2 {
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	margin-top: 20%;
+}
+.banner-text h3 {
+  text-align: center;
+  color: #fff;
+  font-size: 35px;
+  
+}
+.animation-area {
+	background: linear-gradient(to left, #8942a8, #ba382f);
+	width: 100%;
+	height: 550px;
+}
+.box-area {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.box-area li {
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255, 255, 255, 0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+.box-area li:nth-child(1) {
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(-1500px) rotate(360deg);
+		opacity: 0;
+	}
+}
+/*Redireccion de Links de Dari*/
+.banner-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*navegación*/
+#navbar {
+  display: none;
+  cursor: pointer;
+}
+
+
+/* ola debajo del título*/
+.wave {
+  padding-top: 445px;
+  position: relative;
+}
+
+/* Información */
+.Sobre-title {
+  color: white;
+  text-align: center;
+  font-size: 42px;
+  padding: 25px;
+  padding-bottom: 30px;
+}
+
+.Texto-Sobre {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.container{
+  text-align: center;
+}
+
+/*Corazón homo*/
+.container i {
+  background: url(rainbow.jpg);
+  font-size: 200px;
+  background-size: 200px;
+  height: 200px;
+   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: Rainbow 28s infinite linear forwards;
+}
+
+@keyframes Rainbow {
+ 100% {
+   background-position: 5000px, 0px;
+ }
+}
+
+/*Texto Neon para Dari*/
+
+.Neon-Text {
+  text-align: center;
+  color: #42445A;
+  width: 100%;
+  font-size: 50px;
+  letter-spacing: 15px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+  line-height: 0.70em;
+  transform: uppercase;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: NeonDari 5s linear infinite;
+}
+
+@keyframes NeonDari 
+{
+  0%,18.5%,27%,40.5%,58%,70.1%,85%,97% {
+    color: #42445A;
+    text-shadow: none;
+  }
+  18%,28%,35%,55%,70%,72%,80%,100% {
+    color: white;
+    text-shadow: 0 0 10px #EC64F1,
+    0 0 20px #EC64F1,
+    0 0 40px #EC64F1,
+    0 0 80px #EC64F1,
+    0 0 160px #EC64F1;
+  }
+}
+
+/*Estrella*/
+
+.container2 {
+  text-align: center;
+}
+
+.container2 i {
+  color: white;
+  font-size: 160px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  text-shadow: 0 0 10px #EC64F1;
+}
+
+.futuro {
+  font-family: 'Poppins', sans-serif;
+  text-align: Center;
+  color: white;
+  font-size: 25px;
+  padding: 15px;
+}
+
+.bg {
+  background: rgba(255, 255, 255, 0.3);
+  height: 50vw;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: -40vw;
+}
+
+.markt {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 6vw;
+  color: white;
+  text-align: center;
+}
+
+.productos {
+  font-family: 'Montserrat' , sans-serif;
+  font-size: 10vw;
+  font-weight: 1000;
+  text-align: center;
+  color: white;
+  padding-top: 0px;
+}
+
+/*Información del pollo Dari*/
+.pollo {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.container3 {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  height: 600px;
+  background: #42445A;
+  margin: 20px;
+}
+
+.container3 .img-pollo {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+  height: 100%;
+  background: #FFF;
+}
+
+.container3 .img-pollo img {
+  position: relative;
+  width: 700px;
+}
+
+.container3 .Detalles-pollo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 40px;
+  color: white;
+}
+
+
+.container3 .Detalles-pollo h2 {
+  font-size: 2.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 0.8em;
+}
+
+.container3 .Detalles-pollo h2 span {
+  font-size: 0.4em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  letter-spacing: 2px;
+}
+
+.container3 .Detalles-pollo p {
+  font-size: 20px;
+  width: 85%;
+  margin: 15%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container3 .Detalles-pollo h3 {
+  font-size: 1.8em;
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 5px;
+  padding-top: 10px;
+}
+
+.container3 .Detalles-pollo button a {
+  text-decoration: none;
+  color: gray;
+}
+
+
+.container3 .Detalles-pollo button {
+  float: right;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  font-weight: 600;
+  padding: 15px 20px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+@media (max-height: 1080px)
+{
+  .container3 
+  {
+    height: auto;
+  }
+  
+  .container3 .img-pollo
+  {
+    padding: 40px;
+    box-sizing: border-box;
+    text-align: center;
+    height: auto;
+    width: 100% !important;
+    overflow: hidden;
+  }
+  
+  .container3 .img-pollo img 
+  {
+    left: initial;
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+  
+  .Detalles-pollo
+  {
+    width: 100% !important;
+    height: auto;
+    padding: 20px;
+  }
+  
+  .container3 .Detalles-pollo p
+  {
+    max-width: 100%;
+    margin: 0;
+  }
+}
+
+.Penultimo {
+  font-size: 42px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.Version {
+  text-align: center;
+  font-size: 4vw;
+  padding-top: 20px;
+  color:white;
+}
+/*Copyright*/
+footer {
+  background: black;
+  color:white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.copyright {
+  font-size: 3vw;
+  padding-top: 10px;
+}
+
+.textoco {
+  color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 4vw;
+}
+
+.terminos {
+  color: white;
+  font-size: 3vw;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.final {
+  color: white;
+  font-size: 2vw;
+  padding-top: 0px;
+  padding-bottom: 5px;
+}
